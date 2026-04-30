@@ -14,7 +14,7 @@
   const FRAME_PREFIX    = 'frame_';
   const FRAME_EXT       = '.webp';
   const PRELOAD_BATCH   = 20;   // frames to load concurrently
-  const LERP_FACTOR     = 0.10; // smoothing (lower = smoother/slower)
+  const LERP_FACTOR     = 0.05; // smoothing (lower = smoother/slower)
 
   /* ─────────────────────────────────────────────────────────
      ELEMENT REFS
