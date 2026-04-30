@@ -1,5 +1,4 @@
 :root {
-    --primary: #007AFF;
     --bg: #000000;
     --text: #ffffff;
 }
@@ -8,24 +7,21 @@ body {
     margin: 0;
     background-color: var(--bg);
     color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family: sans-serif;
     overflow-x: hidden;
 }
 
-/* Loader */
 #loader {
     position: fixed;
     inset: 0;
     z-index: 999;
     background: var(--bg);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: opacity 0.6s ease;
+    transition: opacity 0.5s ease;
 }
 
-/* Fixed Background Canvas */
 .animation-wrapper {
     position: fixed;
     top: 0;
@@ -38,10 +34,9 @@ body {
 canvas {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    display: block;
 }
 
-/* Text Styling & Fading */
 .hero-text {
     height: 100vh;
     display: flex;
@@ -50,18 +45,17 @@ canvas {
     align-items: center;
     text-align: center;
     padding: 0 20px;
-    will-change: opacity, transform;
 }
 
 .location-tag { color: #aaa; font-size: 0.9rem; margin-bottom: 1rem; }
-h1 { font-size: clamp(2rem, 5vw, 4rem); line-height: 1.1; margin: 0; }
-.details { margin: 1.5rem 0; display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;}
+h1 { font-size: clamp(2rem, 5vw, 4rem); margin: 0; }
+.details { margin: 1.5rem 0; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
 .badge { background: rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(255,255,255,0.2); }
-.bio { font-size: 1.2rem; opacity: 0.8; max-width: 600px; line-height: 1.5; }
+.bio { font-size: 1.2rem; opacity: 0.8; max-width: 600px; }
 
 .cta-buttons { margin-top: 2rem; display: flex; gap: 15px; }
-.btn { text-decoration: none; padding: 12px 25px; border-radius: 8px; font-weight: 600; transition: 0.3s; }
+.btn { text-decoration: none; padding: 12px 25px; border-radius: 8px; font-weight: 600; }
 .primary { background: white; color: black; }
 .secondary { border: 1px solid white; color: white; }
 
-.scroll-buffer { height: 150vh; } /* Controls total scroll depth */
+.scroll-buffer { height: 120vh; }
