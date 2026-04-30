@@ -3,37 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UT Website | Interactive Hero</title>
+    <title>UT Custom Keyboards</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Loading Overlay -->
+    <!-- Loading Screen -->
     <div id="loader">
-        <p>Loading Experience...</p>
+        <div class="spinner"></div>
+        <p>Initializing Engineering Quality...</p>
     </div>
 
-    <!-- Animation Container -->
+    <!-- Background Animation -->
     <div class="animation-wrapper">
         <canvas id="hero-canvas"></canvas>
     </div>
 
-    <!-- Scrollable Content -->
+    <!-- Main Content -->
     <main>
-        <section class="spacer">
-            <h1>Dynamic Vision</h1>
-            <p>Scroll to explore the sequence.</p>
-        </section>
-        
-        <section class="spacer">
-            <h2>Smooth Performance</h2>
-            <p>Optimized with WebP and Canvas.</p>
+        <section class="hero-text fade-section">
+            <p class="location-tag">📍 Jammu & Kashmir | Pan-India Service Available</p>
+            <h1>Electronics Engineer & <br>Custom Keyboard Specialist</h1>
+            
+            <div class="details">
+                <span class="badge">Switch Lubing</span>
+                <span class="badge">Custom Builds</span>
+                <span class="badge">PCB Design & Repair</span>
+            </div>
+
+            <p class="bio">
+                From hobby mods to full custom keyboard builds <br>
+                with precision engineering quality.
+            </p>
+
+            <div class="cta-buttons">
+                <a href="#" class="btn primary">Contact on Discord</a>
+                <a href="#" class="btn secondary">View Services</a>
+            </div>
         </section>
 
-        <section class="spacer">
-            <h2>Production Ready</h2>
-            <p>Ready for deployment.</p>
-        </section>
+        <!-- Invisible scroll space to allow the animation to play -->
+        <div class="scroll-buffer"></div>
     </main>
 
     <script src="script.js"></script>
