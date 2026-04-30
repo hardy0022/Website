@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KBD.ENG — Electronics Engineer & Custom Keyboard Specialist</title>
+  <meta name="description" content="Professional switch lubing, custom keyboard builds, PCB design and repair. Based in Jammu & Kashmir. Pan-India service." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════ LOADER ═══════════ -->
+  <div class="loader" id="loader" role="status" aria-label="Loading frames">
+    <div class="loader-inner">
+      <div class="loader-logo">KBD<span>.</span>ENG</div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar" id="loader-bar"></div>
+      </div>
+      <p class="loader-text" id="loader-text">Initialising… 0%</p>
+    </div>
+  </div>
+
+  <!-- ═══════════ NAV ═══════════ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="KBD.ENG Home">
+        <span class="logo-mark">KBD</span><span class="logo-dot">.</span><span class="logo-suffix">ENG</span>
+      </a>
+      <div class="nav-links">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#info" class="nav-link">Info</a>
+      </div>
+      <a href="https://discord.com/users/hardy_022" target="_blank" rel="noopener" class="nav-cta">
+        Discord
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+          <path d="M2 10L10 2M10 2H4.5M10 2V7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ═══════════ HERO SCROLL ═══════════ -->
+  <section class="hero-scroll" id="hero" aria-label="Hero animation">
+    <div class="hero-sticky">
+
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <div class="hero-overlays" aria-hidden="true">
+        <div class="ov ov-vignette"></div>
+        <div class="ov ov-bottom"></div>
+        <div class="ov ov-top"></div>
+      </div>
+
+      <div class="hero-content" id="hero-content">
+        <div class="hero-badge">
+          <span class="badge-pulse"></span>
+          <span>📍 Jammu &amp; Kashmir</span>
+          <span class="badge-pipe">|</span>
+          <span>Pan-India Service Available</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="htl" style="--d:0">Electronics Engineer</span>
+          <span class="htl htl-accent" style="--d:1">&amp; Custom Keyboard</span>
+          <span class="htl" style="--d:2">Specialist</span>
+        </h1>
+
+        <p class="hero-sub">Switch Lubing &nbsp;·&nbsp; Custom Builds &nbsp;·&nbsp; PCB Design &amp; Repair</p>
+        <p class="hero-desc">From hobby mods to full custom keyboard builds<br/>with precision engineering quality.</p>
+
+        <div class="hero-btns">
+          <a href="https://discord.com/users/hardy_022" target="_blank" rel="noopener" class="btn-prime">
+            Contact on Discord
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 12L12 2M12 2H5M12 2V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#services" class="btn-ghost">View Services</a>
+        </div>
+      </div>
+
+      <div class="scroll-ind" id="scroll-ind" aria-hidden="true">
+        <div class="si-mouse">
+          <div class="si-dot"></div>
+        </div>
+        <span class="si-label">Scroll</span>
+      </div>
+
+      <div class="frame-hud" id="frame-hud" aria-hidden="true">
+        <span id="frame-cur">001</span><span class="fhud-sep">/</span><span>207</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ MAIN ═══════════ -->
+  <main id="main">
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Switch Lubing</span><span class="dot">·</span>
+        <span>Custom Builds</span><span class="dot">·</span>
+        <span>PCB Design</span><span class="dot">·</span>
+        <span>Soldering</span><span class="dot">·</span>
+        <span>Stabilizer Tuning</span><span class="dot">·</span>
+        <span>Firmware</span><span class="dot">·</span>
+        <span>Electronics Repair</span><span class="dot">·</span>
+        <span>Switch Lubing</span><span class="dot">·</span>
+        <span>Custom Builds</span><span class="dot">·</span>
+        <span>PCB Design</span><span class="dot">·</span>
+        <span>Soldering</span><span class="dot">·</span>
+        <span>Stabilizer Tuning</span><span class="dot">·</span>
+        <span>Firmware</span><span class="dot">·</span>
+        <span>Electronics Repair</span><span class="dot">·</span>
+      </div>
+    </div>
+
+    <!-- S1: Switch Services -->
+    <section class="svc-section rv" id="services" aria-labelledby="t1">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="sec-num">01</span>
+          <h2 class="sec-title" id="t1">Switch Services</h2>
+          <p class="sec-desc">Individual switch modifications with precision application — every switch treated with care.</p>
+        </header>
+        <div class="cards" id="pricing">
+          <article class="card rv-card">
+            <div class="ch"><span class="ci">🟡</span><div class="cp"><em class="ca">₹12</em><span class="cu">per switch</span></div></div>
+            <h3 class="ct">Krytox 205g0 Lubing</h3>
+            <p class="cd">Smooth, consistent application using premium Krytox lubricant for buttery keystrokes.</p>
+          </article>
+          <article class="card rv-card">
+            <div class="ch"><span class="ci">🔵</span><div class="cp"><em class="ca">₹7</em><span class="cu">per switch</span></div></div>
+            <h3 class="ct">Durock Films</h3>
+            <p class="cd">Premium switch stabilization film for tighter feel and reduced wobble.</p>
+          </article>
+          <article class="card rv-card">
+            <div class="ch"><span class="ci">⚪</span><div class="cp"><em class="ca">₹9</em><span class="cu">per switch</span></div></div>
+            <h3 class="ct">TX Films</h3>
+            <p class="cd">Heavy-duty film option for maximum housing stability and solid typing feel.</p>
+          </article>
+          <article class="card rv-card">
+            <div class="ch"><span class="ci">🌀</span><div class="cp"><em class="ca">₹3</em><span class="cu">per switch</span></div></div>
+            <h3 class="ct">Spring Swap &amp; Oil</h3>
+            <p class="cd">Supply your own springs — we handle the swap and precision spring lubing.</p>
+          </article>
+          <article class="card rv-card">
+            <div class="ch"><span class="ci">✨</span><div class="cp"><em class="ca">₹5</em><span class="cu">per switch</span></div></div>
+            <h3 class="ct">Switch Stem Tuning</h3>
+            <p class="cd">Light polishing of stem legs for improved tactile feel and reduced scratchiness.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- S2: Combo -->
+    <section class="svc-section svc-combo rv" aria-labelledby="t2">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="sec-num">02</span>
+          <h2 class="sec-title" id="t2">Combo Deal</h2>
+          <p class="sec-desc">Everything your switches need in a single, comprehensive service pass.</p>
+        </header>
+        <div class="cards cards-center">
+          <article class="card card-feat rv-card">
+            <div class="feat-badge">★ Most Popular</div>
+            <div class="ch"><span class="ci">🔥</span><div class="cp"><em class="ca ca-lg">₹20</em><span class="cu">per switch</span></div></div>
+            <h3 class="ct">Complete Switch Mod</h3>
+            <p class="cd">The full treatment — lube, film, and spring swap in one precision pass. Maximum performance for every switch.</p>
+            <ul class="feat-list">
+              <li><span class="chk">✓</span> Krytox 205g0 Lubing</li>
+              <li><span class="chk">✓</span> Film Installation (Durock or TX)</li>
+              <li><span class="chk">✓</span> Spring Swap &amp; Oil</li>
+            </ul>
+            <a href="https://discord.com/users/hardy_022" target="_blank" rel="noopener" class="btn-feat">Get This Deal</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- S3: Stabs -->
+    <section class="svc-section rv" aria-labelledby="t3">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="sec-num">03</span>
+          <h2 class="sec-title" id="t3">Stabilizer Tuning Services</h2>
+          <p class="sec-desc">Eliminate rattle and achieve smooth, consistent stabilizers on every key.</p>
+        </header>
+        <div class="cards">
+          <article class="card rv-card">
+            <div class="ch"><span class="ci">🛠️</span><div class="cp"><em class="ca">₹65</em><span class="cu">each</span></div></div>
+            <h3 class="ct">Full Stabilizer Service</h3>
+            <p class="cd">Complete disassembly, deep clean, lubing, and tuning for optimal performance.</p>
+          </article>
+          <article class="card rv-card">
+            <div class="ch"><span class="ci">⚖️</span><div class="cp"><em class="ca">₹25</em><span class="cu">each</span></div></div>
+            <h3 class="ct">Wire Balancing Only</h3>
+            <p class="cd">Precise wire balancing to eliminate rattle and wobble.</p>
+          </article>
+          <article class="card rv-card">
+            <div class="ch"><span class="ci">♻️</span><div class="cp"><em class="ca">₹40</em><span class="cu">each</span></div></div>
+            <h3 class="ct">Restore Old Stabilizers</h3>
+            <p class="cd">Deep clean and restoration to bring aged stabilizers back to like-new condition.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- S4: Build & Soldering -->
+    <section class="svc-section rv" aria-labelledby="t4">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="sec-num">04</span>
+          <h2 class="sec-title" id="t4">Build &amp; Soldering Services</h2>
+          <p class="sec-desc">Professional soldering, desoldering, and complete keyboard assembly.</p>
+        </header>
+        <div class="cards cards-wide">
+          <article class="card rv-card">
+            <div class="ch"><span class="ci">🔧</span><div class="cp"><em class="ca">₹7</em><span class="cu">per switch</span></div></div>
+            <h3 class="ct">Solder Switches</h3>
+            <p class="cd">Clean, consistent solder joints on every pin.</p>
+          </article>
+          <article class="card rv-card">
+            <div class="ch"><span class="ci">🔩</span><div class="cp"><em class="ca">₹12</em><span class="cu">per switch</span></div></div>
+            <h3 class="ct">Desolder Switches</h3>
+            <p class="cd">Safe removal without PCB pad damage.</p>
+          </article>
+          <article class="card rv-card">
+            <div class="ch"><span class="ci">⌨️</span><div class="cp"><em class="ca">₹500–550</em></div></div>
+            <h3 class="ct">60–65% Keyboard Build</h3>
+            <p class="cd">Complete compact form factor assembly, tested and tuned.</p>
+          </article>
+          <article class="card rv-card">
+            <div class="ch"><span class="ci">🖥️</span><div class="cp"><em class="ca">₹650–800</em></div></div>
+            <h3 class="ct">TKL Keyboard Build</h3>
+            <p class="cd">Full tenkeyless assembly with quality verification.</p>
+          </article>
+          <article class="card rv-card">
+            <div class="ch"><span class="ci">🔌</span><div class="cp"><em class="ca">₹18</em><span class="cu">per socket</span></div></div>
+            <h3 class="ct">Millmax Socket Install</h3>
+            <p class="cd">Precision socket installation for hotswap conversion.</p>
+          </article>
+          <article class="card rv-card">
+            <div class="ch"><span class="ci">🔁</span><div class="cp"><em class="ca">₹13</em><span class="cu">per socket</span></div></div>
+            <h3 class="ct">Hotswap Socket Install / Replacement</h3>
+            <p class="cd">New install or damaged socket replacement.</p>
+          </article>
+          <article class="card card-q rv-card">
+            <div class="ch"><span class="ci">🧩</span><span class="qbadge">Quote Based</span></div>
+            <h3 class="ct">Split Keyboard Build</h3>
+            <p class="cd">Custom split ergonomic keyboard assembly and wiring.</p>
+          </article>
+          <article class="card card-q rv-card">
+            <div class="ch"><span class="ci">🔬</span><span class="qbadge">Quote Based</span></div>
+            <h3 class="ct">PCB Troubleshooting</h3>
+            <p class="cd">Diagnose and fix PCB issues, trace shorts, component faults.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- S5: PCB Design -->
+    <section class="svc-section rv" aria-labelledby="t5">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="sec-num">05</span>
+          <h2 class="sec-title" id="t5">Custom Keyboard &amp; PCB Design</h2>
+          <p class="sec-desc">End-to-end design, fabrication support, and firmware — from concept to working board.</p>
+        </header>
+        <div class="cards">
+          <article class="card card-q rv-card">
+            <div class="ch"><span class="ci">📐</span><span class="qbadge">Quote Based</span></div>
+            <h3 class="ct">PCB Design &amp; Layout</h3>
+            <p class="cd">Schematic to layout, fully routed and DRC-verified for production.</p>
+          </article>
+          <article class="card card-q rv-card">
+            <div class="ch"><span class="ci">🏭</span><span class="qbadge">Quote Based</span></div>
+            <h3 class="ct">PCB Fabrication Support</h3>
+            <p class="cd">Gerber prep, fab vendor coordination, and quality control.</p>
+          </article>
+          <article class="card card-q rv-card">
+            <div class="ch"><span class="ci">🎛️</span><span class="qbadge">Quote Based</span></div>
+            <h3 class="ct">Custom Keyboard Build</h3>
+            <p class="cd">Fully bespoke keyboard built to your exact specifications.</p>
+          </article>
+          <article class="card card-q rv-card">
+            <div class="ch"><span class="ci">💾</span><span class="qbadge">Quote Based</span></div>
+            <h3 class="ct">Firmware Upload &amp; Testing</h3>
+            <p class="cd">QMK/VIA flashing, keymap configuration, and full functional testing.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- S6: Electronics Repair -->
+    <section class="svc-section rv" aria-labelledby="t6">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="sec-num">06</span>
+          <h2 class="sec-title" id="t6">Electronics Repair</h2>
+          <p class="sec-desc">Component-level diagnosis and repair for general electronics.</p>
+        </header>
+        <div class="cards cards-center">
+          <article class="card card-q card-solo rv-card">
+            <div class="ch"><span class="ci">⚡</span><span class="qbadge">Quote Based</span></div>
+            <h3 class="ct">General Electronics Repair</h3>
+            <p class="cd">Component-level repair and diagnostics for consumer electronics, PCBs, and modules. Contact for assessment.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- S7: Info -->
+    <section class="info-section rv" id="info" aria-labelledby="t7">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="sec-num">07</span>
+          <h2 class="sec-title" id="t7">Important Information</h2>
+        </header>
+        <div class="info-grid">
+          <div class="info-card rv-card"><div class="info-ico">⏱</div><h4>Turnaround</h4><p>5–7 days depending on order complexity and queue.</p></div>
+          <div class="info-card rv-card"><div class="info-ico">🔍</div><h4>Compatibility</h4><p>Customer must verify compatibility before shipping parts.</p></div>
+          <div class="info-card rv-card"><div class="info-ico">💳</div><h4>Payment</h4><p>Payment after completion. Optional work samples on request.</p></div>
+          <div class="info-card rv-card"><div class="info-ico">📦</div><h4>Shipping</h4><p>Buyer covers all shipping costs in both directions.</p></div>
+          <div class="info-card rv-card"><div class="info-ico">📊</div><h4>Bulk Orders</h4><p>Negotiable pricing for large-quantity orders.</p></div>
+          <div class="info-card rv-card"><div class="info-ico">✅</div><h4>Quality Guarantee</h4><p>Precision and consistency guaranteed on every order.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section rv" id="contact" aria-labelledby="cta-t">
+      <div class="cta-wrap">
+        <span class="cta-tag">Let's build something great</span>
+        <h2 class="cta-title" id="cta-t">Ready to Mod<br/>Your Keyboard?</h2>
+        <p class="cta-desc">Contact me on Discord for inquiries, bulk orders,<br/>negotiations and custom quotes.</p>
+        <a href="https://discord.com/users/hardy_022" target="_blank" rel="noopener" class="btn-prime btn-prime-lg">
+          Contact on Discord
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <div class="cta-deco" aria-hidden="true"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand"><span class="logo-mark">KBD</span><span class="logo-dot">.</span><span class="logo-suffix">ENG</span></div>
+      <p class="footer-tag">Quality work. Fair pricing. Fast turnaround.</p>
+      <p class="footer-copy">© 2025 Electronics Engineer &amp; Custom Keyboard Specialist — Jammu &amp; Kashmir, India</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
